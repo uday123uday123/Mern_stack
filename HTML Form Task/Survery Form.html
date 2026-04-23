@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        form {
+            width: 350px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Survey Form</h2>
+
+    <form>
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required>
+
+        <label for="feedback">Feedback:</label>
+        <textarea id="feedback" name="feedback" rows="4" placeholder="Enter your feedback" required></textarea>
+
+        <label>Rating:</label>
+        <input type="radio" name="rating" value="1" required> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+
+        <label for="technology">Favorite Technology:</label>
+        <select id="technology" name="technology" required>
+            <option value="">Select Technology</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="subscribe"> Subscribe to newsletter
+        </label>
+
+        <br>
+        <input type="submit" value="Submit Survey">
+    </form>
+
+</body>
+</html>

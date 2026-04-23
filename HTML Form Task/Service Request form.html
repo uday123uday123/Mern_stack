@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Request Form</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        form {
+            width: 350px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 align="center">Service Request Form</h2>
+
+    <form>
+        <label for="customer_name">Customer Name:</label>
+        <input type="text" id="customer_name" name="customer_name" placeholder="Enter your name" required>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" name="contact" placeholder="Enter contact number" required>
+
+        <label for="issue_type">Issue Type:</label>
+        <select id="issue_type" name="issue_type" required>
+            <option value="">Select Issue</option>
+            <option value="laptop_repair">Laptop Repair</option>
+            <option value="internet_issue">Internet Issue</option>
+            <option value="software_problem">Software Problem</option>
+        </select>
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Describe your issue" required></textarea>
+
+        <label>Priority:</label>
+        <input type="radio" name="priority" value="low" required> Low
+        <input type="radio" name="priority" value="medium"> Medium
+        <input type="radio" name="priority" value="high"> High
+
+        <br><br>
+        <input type="submit" value="Submit Request">
+    </form>
+
+</body>
+</html>
